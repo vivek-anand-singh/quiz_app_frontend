@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/question.dart';
 
 class ApiService {
-  final String baseUrl = '/api'; // Use this for Android emulator
+  final String baseUrl = 'https://quiz-app-api-ify7.onrender.com/api'; // Use this for Android emulator
 
   Future<List<Question>> fetchQuestions() async {
     final response = await http.get(Uri.parse('$baseUrl/questions'));
